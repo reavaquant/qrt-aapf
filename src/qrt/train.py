@@ -2,8 +2,9 @@ import pandas as pd
 from sklearn.base import clone
 
 
-def train_and_predict_cv(model, X, y, folds, predict_fn):
+def train_and_predict_cv(model, X, y, folds, predict_fn, return_models=False):
     oof = pd.Series(index=X.index, dtype=float, name="prediction")
+    models = []
 
     for fold in sorted(folds.unique()):
         validation_rows = folds == fold
@@ -12,8 +13,13 @@ def train_and_predict_cv(model, X, y, folds, predict_fn):
         fold_model = clone(model)
         fold_model.fit(X.loc[train_rows], y.loc[train_rows])
 
+        models.append(fold_model)
+
         oof.loc[validation_rows] = predict_fn(fold_model, X.loc[validation_rows])
 
+    if return_models:
+        return oof, models
+    
     return oof
 
 

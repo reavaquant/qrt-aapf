@@ -11,8 +11,11 @@ add fetaures 1:
 
 garder win rate
 
-add volume fts: mean 5 20 et std 5 20
+- add volume fts: mean 5 20 et std 5 20
 garder volume fts pour l'instant
+- tests stability seed a peu pres coirrect donc on garde 53 fts
+
+-look at feature importance
 
 
 plus tard intercation avec alloc, group et numerical categories from group et alloc
