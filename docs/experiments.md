@@ -5,3 +5,8 @@
 
 stay with lgbmclass
 
+add fetaures 1:
+mean ret 5 et 20, ret std 5 et 20, ret 1 / ret std 20, win rate, ret std 5 / ret std 20
+
+
+plus tard intercation avec alloc, group et numerical categories from group et alloc
