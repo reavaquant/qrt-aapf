@@ -1,5 +1,5 @@
 import pandas as pd
-from qrt.validation import make_cv_folds
+from qrt.splitters import make_date_folds
 
 
 def test_make_cv_folds():
@@ -8,7 +8,7 @@ def test_make_cv_folds():
         index=range(10, 16),
     )
 
-    folds = make_cv_folds(X, n_splits=3)
+    folds = make_date_folds(X, n_splits=3)
 
     assert folds.index.equals(X.index)
     assert set(folds) == {0, 1, 2}
