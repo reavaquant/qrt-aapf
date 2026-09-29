@@ -23,10 +23,10 @@ def compute_features(X):
     X["NORM_RET_1_20"] = X["RET_1"] / volatility
     X["RET_STD_RATIO_5_20"] = X["RET_STD_5"] / volatility
 
-    for col in ["RET_1", "RET_MEAN_5", "RET_MEAN_20"]:
-        date_mean = X.groupby("TS")[col].transform("mean")
+    # for col in ["RET_1", "RET_MEAN_5", "RET_MEAN_20"]:
+    #     date_mean = X.groupby("TS")[col].transform("mean")
 
-        X[f"TS_MEAN_{col}"] = date_mean
-        X[f"TS_DIFF_{col}"] = X[col] - date_mean
+    #     X[f"TS_MEAN_{col}"] = date_mean
+    #     X[f"TS_DIFF_{col}"] = X[col] - date_mean
 
     return X

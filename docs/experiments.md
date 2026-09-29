@@ -18,6 +18,8 @@ garder volume fts pour l'instant
 - look at feature importance
 - norm ret ratio 1 20 ablation: la feature la plus importante dans les arbres n’apporte ici qu’un petit avantage supplémentaire en validation
 
+fetaures v3:
+- same-date allocation averages and deviations for recent returns: On conserve les 53 features comme référence, pas de motivation a les ajoputer
 
 
 plus tard intercation avec alloc, group et numerical categories from group et alloc
