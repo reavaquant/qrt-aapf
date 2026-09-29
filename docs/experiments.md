@@ -15,7 +15,9 @@ garder win rate
 garder volume fts pour l'instant
 - tests stability seed a peu pres coirrect donc on garde 53 fts
 
--look at feature importance
+- look at feature importance
+- norm ret ratio 1 20 ablation: la feature la plus importante dans les arbres n’apporte ici qu’un petit avantage supplémentaire en validation
+
 
 
 plus tard intercation avec alloc, group et numerical categories from group et alloc
