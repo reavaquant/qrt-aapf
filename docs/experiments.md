@@ -21,5 +21,8 @@ garder volume fts pour l'instant
 fetaures v3:
 - same-date allocation averages and deviations for recent returns: On conserve les 53 features comme référence, pas de motivation a les ajoputer
 
+- come back to fts v2 et add categories features
+- add cat_smooth for categories regularization 
+
 
 plus tard intercation avec alloc, group et numerical categories from group et alloc
