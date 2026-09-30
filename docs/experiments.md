@@ -23,6 +23,7 @@ fetaures v3:
 
 - come back to fts v2 et add categories features
 - add cat_smooth for categories regularization 
+- test chnage in hyper params pour voir: que acc train up donc c'est pas ca le truc -> overfit
 
 
 plus tard intercation avec alloc, group et numerical categories from group et alloc
